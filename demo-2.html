@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Showcase Slider</title>
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Ysabeau+Infant:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet" />
+    <!--PLUGIN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- ***** tailwind css ***** -->
+    <script src="assets/css/3.4.16"></script>
+    <style>
+        
+/***************************
+    CUSTOM SCROLL BAR
+****************************/
+
+.slider .slider-inner {
+    clip: rect(0, 100vw, 100vh, 100vw);
+}
+
+.slider .slider-inner:nth-child(1){
+    background:linear-gradient(to right, rgba(1,1,1,1) 10%, rgba(1,1,1,0.8) 51%, rgba(1,1,1,0.2) 100%), url("assets/img/slider-1.jpg");
+    background-size: cover;
+    background-position:top left;
+}
+.slider .slider-inner:nth-child(2){
+    background:linear-gradient(to right, rgba(1,1,1,1) 10%, rgba(1,1,1,0.8) 51%, rgba(1,1,1,0.2) 100%), url("assets/img/slider-2.jpg");
+    background-size: cover;
+    background-position:top left;
+}
+
+.slider .slider-inner:nth-child(3){
+    background:linear-gradient(to right, rgba(1,1,1,1) 10%, rgba(1,1,1,0.8) 51%, rgba(1,1,1,0.2) 100%), url("assets/img/slider-3.jpg");
+    background-size: cover;
+    background-position:top left;
+}
+.slider .slider-inner:before{
+    content:"";
+    position:absolute;
+    top:-20px;
+    right:0;
+    width:250px;
+    height:250px;
+    background-image:url("assets/img/slider-shape.png");
+    background-size:100% 100%;
+    transition-delay: 1s;
+    transform: rotate(-90deg);
+    z-index:1;
+}
+.slider .slider-inner:after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:300px;
+    height:300px;
+    background-image:url("assets/img/slider-shape-2.png");
+    background-size:100% 100%;
+    transform:rotate(360deg);
+	transition: all 1.5s cubic-bezier(0,0,.2,1);
+    z-index:1;
+    background-position:center left;
+}
+.slider h3, .slider h3 + p, .slider p + .btn, .slider-inner:after{
+    opacity: 0;
+    transition: opacity .7s 0s, transform .5s .2s;
+    transform: translate3d(0, 50%, 0);
+}
+.slider-inner.current h3, .slider-inner.current h3 + p, .slider-inner.current p + .btn, .slider-inner.current:after {
+    opacity: 1;
+    transition-delay: 1s;
+    transform: translate3d(0, 0, 0);
+}
+.slider .slider-inner:before{
+    transition: 0.5s;
+    top:-250px !important;
+}
+.slider-inner.current:before{
+    transition-delay: 1s;
+    transform: rotate(-90deg);
+    top:-20px !important;
+}
+.slider-inner.current {
+    z-index: 1;
+    clip: rect(0, 100vw, 100vh, 0);
+}
+.slider-inner.prev {
+    clip: rect(0, 0, 100vh, 0);
+}
+.slider em{
+    background: linear-gradient(145deg,#ff2f09,#c24a4e);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.slider-dot.current_dot {
+    transform: scale(1.4);
+    background:linear-gradient(145deg,#ff2f09,#c24a4e) !important;
+}
+    </style>
+</head>
+<body class="bg-white">
+
+    <!--HEADER-->
+    <header>
+        <section class="slider hero-section relative w-full lg:h-screen h-[70vh]">
+            <div>
+                <div class="absolute slider-inner transition-[clip,z-index] duration-700 ease-in-out top-0 left-0 size-full bg-no-repeact flex items-center justify-start">
+                    <article class="center-y w-[60%] mt-[4rem] text-white z-[11]">
+                        <h3 class="text-3xl title"><em>O</em>ccupational <em>H</em>ealth</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>	
+                        <div class="flex">
+                            <a href="#about" class="relative block text-white font-semibold uppercase py-4 px-6 rounded bg-transparent overflow-hidden group">
+                                More about us
+                                <span class="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/20 rounded-full transition-all duration-500 group-hover:w-full group-hover:rounded-[20px]"></span>
+                                <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="absolute slider-inner transition-[clip,z-index] duration-700 ease-in-out top-0 left-0 size-full bg-no-repeact flex items-center justify-start bg-[linear-gradient(to_right,_rgba(1,1,1,1)_10%,_rgba(1,1,1,0.8)_51%,_rgba(1,1,1,0.2)_100%),_url('https://i.postimg.cc/VNgvq45t/slider-1.jpg')] bg-cover bg-left-top">
+                    <article class="center-y w-[60%] mt-[4rem] text-white z-[11]">
+                        <h3 class="text-3xl title"><em>Fire Fighting</em> Spill Response.</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>	
+                        <div class="flex">
+                            <a href="#about" class="relative block text-white font-semibold uppercase py-4 px-6 rounded bg-transparent overflow-hidden group">
+                                More about us
+                                <span class="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/20 rounded-full transition-all duration-500 group-hover:w-full group-hover:rounded-[20px]"></span>
+                                <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="absolute slider-inner transition-[clip,z-index] duration-700 ease-in-out top-0 left-0 size-full bg-no-repeact flex items-center justify-start bg-[linear-gradient(to_right,_rgba(1,1,1,1)_10%,_rgba(1,1,1,0.8)_51%,_rgba(1,1,1,0.2)_100%),_url('https://i.postimg.cc/VNgvq45t/slider-1.jpg')] bg-cover bg-left-top">
+                    <article class="center-y w-[60%] mt-[4rem] text-white z-[11]">
+                        <h3 class="text-3xl title"><em>Fire Fighting</em> Spill Response.</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>	
+                        <div class="flex">
+                            <a href="#about" class="relative block text-white font-semibold uppercase py-4 px-6 rounded bg-transparent overflow-hidden group">
+                                More about us
+                                <span class="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/20 rounded-full transition-all duration-500 group-hover:w-full group-hover:rounded-[20px]"></span>
+                                <i class="fa fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="absolute bottom-[2rem] left-[2rem] text-center z-[10]">
+                    <a href="#" class="slider-dot inline-block size-[8px] bg-white mx-[0.2rem] transition-transform duration-300 group-[.current_dot]:scale-140 group-[.current_dot]:bg-[#eab308]"></a>
+                    <a href="#" class="slider-dot inline-block size-[8px] bg-white mx-[0.2rem] transition-transform duration-300 group-[.current_dot]:scale-140 group-[.current_dot]:bg-[#eab308]"></a>
+                    <a href="#" class="slider-dot inline-block size-[8px] bg-white mx-[0.2rem] transition-transform duration-300 group-[.current_dot]:scale-140 group-[.current_dot]:bg-[#eab308]"></a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <script>
+        {
+  class SliderClip {
+    constructor(el) {
+      this.el = el;
+      this.Slides = Array.from(this.el.querySelectorAll('.slider-inner'));
+      this.Nav = Array.from(this.el.querySelectorAll('.slider-dot'));
+      this.totalSlides = this.Slides.length;
+      this.current = 0;
+      this.autoPlay = true; //true or false
+      this.timeTrans = 4000; //transition time in milliseconds
+      this.IndexElements = [];
+
+      for (let i = 0; i < this.totalSlides; i++) {
+        this.IndexElements.push(i);
+      }
+
+      this.setCurret();
+      this.initEvents();
+    }
+    setCurret() {
+      this.Slides[this.current].classList.add('current');
+      this.Nav[this.current].classList.add('current_dot');
+    }
+    initEvents() {
+      const self = this;
+
+      this.Nav.forEach(dot => {
+        dot.addEventListener('click', ele => {
+          ele.preventDefault();
+          this.changeSlide(this.Nav.indexOf(dot));
+        });
+      });
+
+      this.el.addEventListener('mouseenter', () => self.autoPlay = false);
+      this.el.addEventListener('mouseleave', () => self.autoPlay = true);
+
+      setInterval(function () {
+        if (self.autoPlay) {
+          self.current = self.current < self.Slides.length - 1 ? self.current + 1 : 0;
+          self.changeSlide(self.current);
+        }
+      }, this.timeTrans);
+
+    }
+    changeSlide(index) {
+
+      this.Nav.forEach(allDot => allDot.classList.remove('current_dot'));
+
+      this.Slides.forEach(allSlides => allSlides.classList.remove('prev', 'current'));
+
+      const getAllPrev = value => value < index;
+
+      const prevElements = this.IndexElements.filter(getAllPrev);
+
+      prevElements.forEach(indexPrevEle => this.Slides[indexPrevEle].classList.add('prev'));
+
+      this.Slides[index].classList.add('current');
+      this.Nav[index].classList.add('current_dot');
+    }}
+
+
+  const slider = new SliderClip(document.querySelector('.slider'));
+}
+    </script>
+</body>
+</html>
