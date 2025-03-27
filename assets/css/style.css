@@ -1,3 +1,6 @@
+html , body {
+    overflow-x:hidden;
+}
 /* Menu icon open (cross) state styles */
 #menu-icon.open #top-line {
     transform: rotate(45deg);
@@ -98,8 +101,8 @@
 }
 @media (max-width:767px){
     .slider .slider-inner:before{
-        width:200px;
-        height:200px;
+        width:150px;
+        height:150px;
     }
     .slider .slider-inner:after {
         height:200px;
@@ -107,3 +110,24 @@
     }
 }
 /***** hero section end *****/
+
+
+/* navbar */
+
+.navbar.scrolled {
+    animation: fixedAnim 1s forwards; 
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.06);
+    position: fixed;
+    top: 0;
+    z-index: 6;
+    background-color: white;
+    width: 100%;
+  }
+  @keyframes fixedAnim {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0;
+    }
+  } 

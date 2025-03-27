@@ -58,23 +58,23 @@
 <body class="font-Montserrat">
 
     <!-- ***** header start ***** -->
-    <header class="py-2">
-    <div class="container mx-auto lg:px-12 md:px-7 px-4">
-        <div class="flex items-center justify-between">
-            <a href="index.html" class="flex h-24">
-                <img src="assets/img/logo.png" alt="apbrand solutions" class="h-full">
-            </a>
-            <div>
-                <button onclick="toggleMenu()" class="text-white focus:outline-none">
-                    <span id="menu-icon" class="relative block w-10 h-5 cursor-pointer transition-all ease-in-out">
-                        <span class="absolute top-0 w-full h-0.5 left-0 bg-gray-800 transition-all ease-in-out transform" id="top-line"></span>
-                        <span class="absolute top-2 w-full h-0.5 left-0 bg-gray-800 transition-all ease-in-out" id="middle-line"></span>
-                        <span class="absolute top-4 w-full h-0.5 left-0 bg-gray-800 transition-all ease-in-out transform" id="bottom-line"></span>
-                    </span>
-                </button>
+    <header class="max-md:py-1 sticky top-0 bg-white z-20 w-full navbar transition-all duration-300 ease-in-out" id="navbar">
+        <div class="container mx-auto lg:px-12 md:px-7 px-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex sm:h-24 h-20">
+                    <img src="assets/img/logo.png" alt="apbrand solutions" class="h-full">
+                </a>
+                <div>
+                    <button onclick="toggleMenu()" class="text-white focus:outline-none">
+                        <span id="menu-icon" class="relative block md:w-10 w-8 h-5 cursor-pointer transition-all ease-in-out">
+                            <span class="absolute top-0 w-full h-0.5 left-0 bg-gray-800 transition-all ease-in-out transform" id="top-line"></span>
+                            <span class="absolute top-2 w-full h-0.5 left-0 bg-gray-800 transition-all ease-in-out" id="middle-line"></span>
+                            <span class="absolute top-4 w-full h-0.5 left-0 bg-gray-800 transition-all ease-in-out transform" id="bottom-line"></span>
+                        </span>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
     </header>
     <!-- header offcanvas -->
     <div id="offcanvas-menu" class="fixed inset-0 z-40 bg-gray-800 bg-opacity-50 -translate-x-full transition-all duration-500 ease-in-out">
@@ -86,21 +86,21 @@
                 <button class="text-2xl text-gray" onclick="closeMenu()">✖</button>
             </div>
             <ul class="mt-5 flex flex-col gap-5">
-                <li><a href="index.html" class="block hover:text-theme1 text-gray-800 font-medium transition-all hover:translate-x-3 duration-300 ease-in-out text-[24px]">Home</a></li>
-                <li><a href="about-us.html" class="block hover:text-theme1 text-gray-800 font-medium transition-all hover:translate-x-3 duration-300 ease-in-out text-[24px]">About</a></li>
-                <li><a href="services.html" class="block hover:text-theme1 text-gray-800 font-medium transition-all hover:translate-x-3 duration-300 ease-in-out text-[24px]">Services</a></li>
-                <li><a href="our-clients.html" class="block hover:text-theme1 text-gray-800 font-medium transition-all hover:translate-x-3 duration-300 ease-in-out text-[24px]">Our Clients</a></li>
-                <li><a href="our-work.html" class="block hover:text-theme1 text-gray-800 font-medium transition-all hover:translate-x-3 duration-300 ease-in-out text-[24px]">Our Work</a></li>
-                <li><a href="contact-us.html" class="block hover:text-theme1 text-gray-800 font-medium transition-all hover:translate-x-3 duration-300 ease-in-out text-[24px]">Contact</a></li>
+                <li><a href="index.html" class="block hover:text-theme1 text-gray-800 font-medium transition-all hover:translate-x-3 duration-300 ease-in-out md:text-[24px] text-[20px]">Home</a></li>
+                <li><a href="about-us.html" class="block hover:text-theme1 text-gray-800 font-medium transition-all hover:translate-x-3 duration-300 ease-in-out md:text-[24px] text-[20px]">About</a></li>
+                <li><a href="services.html" class="block hover:text-theme1 text-gray-800 font-medium transition-all hover:translate-x-3 duration-300 ease-in-out md:text-[24px] text-[20px]">Services</a></li>
+                <li><a href="our-clients.html" class="block hover:text-theme1 text-gray-800 font-medium transition-all hover:translate-x-3 duration-300 ease-in-out md:text-[24px] text-[20px]">Our Clients</a></li>
+                <li><a href="our-work.html" class="block hover:text-theme1 text-gray-800 font-medium transition-all hover:translate-x-3 duration-300 ease-in-out md:text-[24px] text-[20px]">Our Work</a></li>
+                <li><a href="contact-us.html" class="block hover:text-theme1 text-gray-800 font-medium transition-all hover:translate-x-3 duration-300 ease-in-out md:text-[24px] text-[20px]">Contact</a></li>
             </ul>
         </div>
     </div>
     <!-- ***** header end ***** -->
 
     <!-- ***** about us section start ***** -->
-    <section class="bg-[url(../assets/img/slider-1.jpg)] bg-center bg-cover py-20 relative before:content-[''] before:absolute before:top-0 before:left-0 before:size-full before:bg-black/40">
+    <section class="bg-[url(../assets/img/slider-1.jpg)] bg-center bg-cover md:py-20 sm:py-16 py-14 relative before:content-[''] before:absolute before:top-0 before:left-0 before:size-full before:bg-black/40">
         <div class="container mx-auto lg:px-12 md:px-7 px-4 relative">
-            <h1 class="text-white font-bold text-[42px]">
+            <h1 class="text-white font-bold lg:text-[42px] md:text-[35px] sm:text-[30px] text-[27px]">
                 About Us
             </h1>
         </div>
@@ -110,24 +110,24 @@
     <!-- ***** section start ***** -->
     <section class="pt-11 bg-[url(../assets/img/map-pattern.png)] bg-center bg-fixed relative">
         <div class="container mx-auto lg:px-12 md:px-7 px-4">
-            <div class="animate-float w-48 right-10 absolute z-[1] bottom-0">
+            <div class="animate-float md:w-48 w-24 sm:right-10 right-3 absolute z-[1] bottom-0">
                 <img src="assets/img/dots-3.png" alt="bulb" class="w-full">
             </div>
-            <div class="grid grid-cols-7 gap-12 items-center">
-                <div class="col-span-3 relative">
+            <div class="grid lg:grid-cols-7 lg:gap-12 md:gap-8 gap-4 items-center">
+                <div class="lg:col-span-3 relative">
                     <div class="relative z-[2]">
                         <img src="assets/img/bolb-img.png" alt="about us" >
                     </div>
                 </div>
-                <div class="col-span-4">
-                    <div class="w-[200px] mx-auto mb-6 h-[3px] bg-theme1 top-14 left-20" data-aos="fade-right" data-aos-duration="1200"></div>  
+                <div class="lg:col-span-4">
+                    <div class="sm:w-[200px] w-[150px] mx-auto md:mb-6 mb-4 h-[3px] bg-theme1 top-14 left-20" data-aos="fade-right" data-aos-duration="1200"></div>  
                     <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300">
-                        <h2 class="font-semibold text-[24px]">We are the BTL experts you need</h2>
-                        <div class="mt-3">
-                            <p class="text-[18px] leading-[33px] text-gray-600 font-medium">
+                        <h2 class="font-semibold md:text-[24px] sm:text-[22px] text-[20px]">We are the BTL experts you need</h2>
+                        <div class="md:mt-3 mt-2">
+                            <p class="md:text-[18px] sm:text-[17px] text-[15px] sm:leading-[33px] leading-[29px] text-gray-600 font-medium">
                                 AP Brand Solutions is not just an agency, it’s your dedicated marketing team operating seamlessly outside your office. We proudly refer to ourselves as “Your Marketing Partner”, committed to transforming a simple business name into powerful brand through comprehensive 360  marketing campaigns across various channels. 
                             </p>
-                            <p class="text-[18px] leading-[33px] text-gray-600 font-medium mt-2.5">
+                            <p class="md:text-[18px] sm:text-[17px] text-[15px] sm:leading-[33px] leading-[29px] text-gray-600 font-medium mt-2.5">
                                 Our mission to mission to help to achieve your business objectives by implementing marketing Strategies rooted in depth analytics and understanding customer journeys 
                                 From the very beginning we have collaborated with clients of all sizes consistently delivering results that align with their unique goals. Our extensive portfolio showcases our innovative capabilities allowing you to see the firsthand impact we can make for your business.
                             </p>
@@ -140,19 +140,19 @@
     <!-- ***** section end ***** -->
 
     <!-- *****  who we are section start ***** -->
-    <section class="bg-gray-100/70 py-14 mt-20 relative">
-        <div class="animate-float w-32 right-7 absolute z-[1] bottom-0">
+    <section class="bg-gray-100/70 md:py-14 sm:py-12 py-10 md:mt-20 sm:mt-16 mt-14 relative">
+        <div class="animate-float lg:w-32 md:w-28 sm:w-20 w-14 md:right-7 right-2 absolute z-[1] md:bottom-0 max-md:top-0">
             <img src="assets/img/Bulb_Vector.png" alt="bulb" class="w-full">
         </div>
         <div class="container mx-auto lg:px-12 md:px-7 px-4">
             <div class="w-[90%]" data-aos="fade-up">
                 <div>
-                    <h3 class="text-[34px] font-semibold text-theme1">Who we are:</h3>
-                    <p class="mt-2.5 text-[22px] font-medium text-gray-700">AN ADVERTISING AND MARKETING AGENCY FOR BRANDS & NEW - AGE STARTUPS  across sectors –<span class="font-semibold text-black"> Just like yours!</span></p>
+                    <h3 class="md:text-[34px] sm:text-[30px] text-[24px] font-semibold text-theme1">Who we are:</h3>
+                    <p class="md:mt-2.5 mt-1.5 lg:text-[22px] md:text-[20px] sm:text-[17px] max-sm:leading-[29px] text-[16px] font-medium text-gray-700">AN ADVERTISING AND MARKETING AGENCY FOR BRANDS & NEW - AGE STARTUPS  across sectors –<span class="font-semibold text-black"> Just like yours!</span></p>
                 </div>
-                <div class="mt-8">
-                    <h3 class="text-[34px] font-semibold text-theme2">What we do:</h3>
-                    <p class="mt-2.5 text-[22px] font-medium text-gray-700">Collaborate with brands custodians to design scalable Branding & marketing Activations</p>
+                <div class="md:mt-8 sm:mt-6 mt-5">
+                    <h3 class="md:text-[34px] sm:text-[30px] text-[24px] font-semibold text-theme2">What we do:</h3>
+                    <p class="md:mt-2.5 mt-1.5 lg:text-[22px] md:text-[20px] sm:text-[17px] max-sm:leading-[29px] text-[16px] font-medium text-gray-700">Collaborate with brands custodians to design scalable Branding & marketing Activations</p>
                 </div>
             </div>
         </div>
@@ -160,19 +160,19 @@
     <!-- *****  who we are section end ***** -->
 
     <!-- ***** content section start ***** -->
-    <section class="mt-14">
+    <section class="md:my-16 sm:my-12 my-10">
         <div class="container mx-auto lg:px-12 md:px-7 px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <div class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 ease-in-out border-2 hover:border-blue-500 hover:border-2 hover:translate-y-2" data-aos="fade-up">
+            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-5 gap-4">
+                <div class="bg-white md:p-6 sm:p-5 p-4 rounded-lg shadow-md transition-all duration-300 ease-in-out border-2 hover:border-blue-500 hover:border-2 hover:translate-y-2" data-aos="fade-up">
                     <div>
-                        <svg version="1.1" id="Layer_1" class="fill-blue-500 h-10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlin" viewBox="0 0 122.88 95.089" enable-background="new 0 0 122.88 95.089" xml:space="preserve"><g><path d="M66.605,9.676c-0.791-0.791-1.718-1.181-2.792-1.181c-1.073,0-2.013,0.39-2.791,1.181l-4.255,4.241 c-1.141-0.738-2.348-1.383-3.61-1.96c-1.261-0.577-2.55-1.072-3.852-1.502V3.931c0-1.1-0.375-2.026-1.141-2.791 C47.401,0.375,46.475,0,45.374,0h-8.187c-1.047,0-1.958,0.375-2.75,1.14c-0.778,0.765-1.168,1.691-1.168,2.791v5.973 c-1.368,0.321-2.697,0.724-3.973,1.221c-1.287,0.496-2.508,1.061-3.663,1.691l-4.711-4.644c-0.738-0.778-1.637-1.181-2.724-1.181 c-1.075,0-2,0.403-2.792,1.181l-5.73,5.745c-0.791,0.791-1.181,1.718-1.181,2.79c0,1.074,0.39,2.014,1.181,2.792l4.242,4.255 c-0.738,1.14-1.382,2.348-1.959,3.608c-0.578,1.262-1.073,2.552-1.504,3.853H3.933c-1.102,0-2.028,0.375-2.792,1.14 C0.376,33.121,0,34.047,0,35.148v8.187c0,1.045,0.376,1.959,1.14,2.751c0.764,0.777,1.691,1.167,2.792,1.167h5.971 c0.322,1.367,0.724,2.696,1.222,3.971c0.498,1.289,1.061,2.537,1.691,3.744l-4.644,4.63c-0.779,0.739-1.181,1.638-1.181,2.726 c0,1.073,0.402,2,1.181,2.792l5.745,5.811c0.791,0.738,1.717,1.102,2.792,1.102c1.072,0,2.011-0.363,2.791-1.102l4.254-4.321 c1.14,0.737,2.349,1.381,3.61,1.96c1.262,0.575,2.55,1.073,3.852,1.502v6.523c0,1.1,0.376,2.025,1.14,2.789 c0.765,0.767,1.692,1.143,2.792,1.143h8.186c1.047,0,1.959-0.376,2.751-1.143c0.777-0.764,1.167-1.689,1.167-2.789v-5.973 c1.369-0.321,2.697-0.724,3.972-1.222c1.289-0.496,2.538-1.061,3.744-1.691l4.63,4.645c0.739,0.778,1.65,1.181,2.753,1.181 c1.112,0,2.025-0.402,2.765-1.181l5.811-5.744c0.738-0.793,1.102-1.719,1.102-2.792s-0.363-2.013-1.102-2.791l-4.321-4.255 c0.738-1.141,1.382-2.348,1.96-3.609c0.575-1.261,1.072-2.551,1.502-3.852h6.523c1.1,0,2.025-0.378,2.789-1.141 c0.766-0.766,1.142-1.691,1.142-2.792v-8.186c0-1.047-0.376-1.958-1.142-2.752c-0.764-0.778-1.689-1.167-2.789-1.167h-5.973 c-0.322-1.315-0.725-2.63-1.222-3.931c-0.496-1.316-1.061-2.55-1.691-3.706l4.645-4.709c0.778-0.738,1.181-1.638,1.181-2.724 c0-1.075-0.402-2-1.181-2.792L66.605,9.676L66.605,9.676z M111.918,53.649c-0.506-0.355-1.044-0.479-1.627-0.376 c-0.583,0.101-1.057,0.401-1.401,0.904l-1.908,2.702c-0.688-0.292-1.402-0.526-2.144-0.721c-0.737-0.194-1.484-0.343-2.231-0.451 l-0.616-3.538c-0.105-0.596-0.395-1.063-0.884-1.406c-0.486-0.343-1.024-0.459-1.621-0.354l-4.441,0.774 c-0.566,0.099-1.025,0.39-1.383,0.879c-0.35,0.487-0.475,1.027-0.369,1.625l0.564,3.238c-0.713,0.303-1.395,0.648-2.037,1.038 c-0.654,0.392-1.263,0.812-1.828,1.264l-2.995-2.073c-0.476-0.352-0.999-0.484-1.59-0.383c-0.583,0.103-1.046,0.407-1.402,0.904 l-2.564,3.659c-0.354,0.504-0.479,1.044-0.377,1.623c0.102,0.585,0.402,1.057,0.905,1.404l2.703,1.907 c-0.292,0.687-0.527,1.402-0.721,2.144c-0.195,0.738-0.343,1.484-0.452,2.231l-3.538,0.616c-0.596,0.104-1.063,0.396-1.406,0.884 c-0.344,0.486-0.458,1.025-0.354,1.621l0.773,4.441c0.099,0.566,0.388,1.026,0.88,1.383c0.487,0.35,1.027,0.474,1.624,0.369 l3.239-0.564c0.304,0.713,0.648,1.394,1.038,2.039c0.392,0.652,0.815,1.274,1.272,1.869l-2.081,2.952 c-0.353,0.475-0.485,0.999-0.383,1.59c0.102,0.583,0.406,1.047,0.904,1.402l3.665,2.607c0.499,0.325,1.036,0.436,1.618,0.334 c0.583-0.101,1.059-0.389,1.41-0.862l1.899-2.746c0.688,0.293,1.403,0.528,2.144,0.721c0.738,0.194,1.484,0.343,2.23,0.45 l0.618,3.54c0.104,0.597,0.396,1.063,0.883,1.404c0.486,0.344,1.025,0.46,1.621,0.356l4.439-0.775 c0.569-0.1,1.028-0.389,1.386-0.879c0.349-0.488,0.474-1.025,0.368-1.624l-0.565-3.241c0.713-0.303,1.396-0.646,2.04-1.037 c0.651-0.393,1.274-0.814,1.87-1.27l2.951,2.081c0.475,0.352,1.008,0.483,1.604,0.378c0.604-0.104,1.061-0.409,1.388-0.901 l2.609-3.665c0.324-0.5,0.435-1.036,0.332-1.618c-0.101-0.583-0.387-1.059-0.86-1.41l-2.748-1.899 c0.294-0.688,0.528-1.403,0.722-2.144c0.194-0.738,0.342-1.484,0.452-2.232l3.537-0.616c0.597-0.104,1.063-0.394,1.405-0.883 c0.344-0.488,0.459-1.024,0.355-1.621l-0.775-4.441c-0.099-0.567-0.389-1.025-0.879-1.384c-0.487-0.351-1.027-0.473-1.624-0.369 l-3.239,0.565c-0.299-0.684-0.642-1.358-1.035-2.017c-0.395-0.667-0.816-1.283-1.267-1.85l2.074-2.995 c0.353-0.475,0.484-0.998,0.38-1.59c-0.101-0.583-0.405-1.045-0.904-1.401L111.918,53.649L111.918,53.649z M99.16,64.929 c1.071-0.188,2.118-0.162,3.147,0.075c1.025,0.246,1.953,0.657,2.777,1.231c0.825,0.582,1.523,1.316,2.101,2.198 c0.573,0.889,0.95,1.865,1.139,2.936c0.187,1.072,0.16,2.119-0.076,3.15c-0.246,1.023-0.655,1.949-1.233,2.776 c-0.582,0.823-1.314,1.522-2.196,2.1c-0.889,0.573-1.865,0.951-2.937,1.139c-1.07,0.186-2.117,0.159-3.148-0.077 c-1.025-0.246-1.95-0.655-2.777-1.232c-0.822-0.582-1.522-1.314-2.1-2.196c-0.572-0.889-0.952-1.866-1.138-2.937 c-0.188-1.07-0.162-2.117,0.075-3.148c0.246-1.025,0.657-1.951,1.231-2.778c0.583-0.821,1.316-1.521,2.198-2.099 C97.114,65.494,98.09,65.116,99.16,64.929L99.16,64.929z M40.262,24.224c2.201,0,4.28,0.417,6.252,1.248 c1.961,0.846,3.666,1.986,5.115,3.421c1.435,1.449,2.575,3.156,3.421,5.113c0.833,1.973,1.248,4.054,1.248,6.254 c0,2.201-0.415,4.282-1.248,6.254c-0.846,1.959-1.986,3.666-3.421,5.115c-1.449,1.436-3.154,2.575-5.115,3.421 c-1.972,0.833-4.051,1.248-6.252,1.248s-4.282-0.415-6.255-1.248c-1.958-0.846-3.664-1.985-5.112-3.421 c-1.437-1.449-2.577-3.155-3.423-5.115c-0.831-1.972-1.248-4.053-1.248-6.254c0-2.2,0.417-4.281,1.248-6.254 c0.846-1.958,1.986-3.664,3.423-5.113c1.448-1.435,3.154-2.576,5.112-3.421C35.979,24.641,38.061,24.224,40.262,24.224 L40.262,24.224z"/></g></svg>
+                        <svg version="1.1" id="Layer_1" class="fill-blue-500 sm:h-10 h-7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlin" viewBox="0 0 122.88 95.089" enable-background="new 0 0 122.88 95.089" xml:space="preserve"><g><path d="M66.605,9.676c-0.791-0.791-1.718-1.181-2.792-1.181c-1.073,0-2.013,0.39-2.791,1.181l-4.255,4.241 c-1.141-0.738-2.348-1.383-3.61-1.96c-1.261-0.577-2.55-1.072-3.852-1.502V3.931c0-1.1-0.375-2.026-1.141-2.791 C47.401,0.375,46.475,0,45.374,0h-8.187c-1.047,0-1.958,0.375-2.75,1.14c-0.778,0.765-1.168,1.691-1.168,2.791v5.973 c-1.368,0.321-2.697,0.724-3.973,1.221c-1.287,0.496-2.508,1.061-3.663,1.691l-4.711-4.644c-0.738-0.778-1.637-1.181-2.724-1.181 c-1.075,0-2,0.403-2.792,1.181l-5.73,5.745c-0.791,0.791-1.181,1.718-1.181,2.79c0,1.074,0.39,2.014,1.181,2.792l4.242,4.255 c-0.738,1.14-1.382,2.348-1.959,3.608c-0.578,1.262-1.073,2.552-1.504,3.853H3.933c-1.102,0-2.028,0.375-2.792,1.14 C0.376,33.121,0,34.047,0,35.148v8.187c0,1.045,0.376,1.959,1.14,2.751c0.764,0.777,1.691,1.167,2.792,1.167h5.971 c0.322,1.367,0.724,2.696,1.222,3.971c0.498,1.289,1.061,2.537,1.691,3.744l-4.644,4.63c-0.779,0.739-1.181,1.638-1.181,2.726 c0,1.073,0.402,2,1.181,2.792l5.745,5.811c0.791,0.738,1.717,1.102,2.792,1.102c1.072,0,2.011-0.363,2.791-1.102l4.254-4.321 c1.14,0.737,2.349,1.381,3.61,1.96c1.262,0.575,2.55,1.073,3.852,1.502v6.523c0,1.1,0.376,2.025,1.14,2.789 c0.765,0.767,1.692,1.143,2.792,1.143h8.186c1.047,0,1.959-0.376,2.751-1.143c0.777-0.764,1.167-1.689,1.167-2.789v-5.973 c1.369-0.321,2.697-0.724,3.972-1.222c1.289-0.496,2.538-1.061,3.744-1.691l4.63,4.645c0.739,0.778,1.65,1.181,2.753,1.181 c1.112,0,2.025-0.402,2.765-1.181l5.811-5.744c0.738-0.793,1.102-1.719,1.102-2.792s-0.363-2.013-1.102-2.791l-4.321-4.255 c0.738-1.141,1.382-2.348,1.96-3.609c0.575-1.261,1.072-2.551,1.502-3.852h6.523c1.1,0,2.025-0.378,2.789-1.141 c0.766-0.766,1.142-1.691,1.142-2.792v-8.186c0-1.047-0.376-1.958-1.142-2.752c-0.764-0.778-1.689-1.167-2.789-1.167h-5.973 c-0.322-1.315-0.725-2.63-1.222-3.931c-0.496-1.316-1.061-2.55-1.691-3.706l4.645-4.709c0.778-0.738,1.181-1.638,1.181-2.724 c0-1.075-0.402-2-1.181-2.792L66.605,9.676L66.605,9.676z M111.918,53.649c-0.506-0.355-1.044-0.479-1.627-0.376 c-0.583,0.101-1.057,0.401-1.401,0.904l-1.908,2.702c-0.688-0.292-1.402-0.526-2.144-0.721c-0.737-0.194-1.484-0.343-2.231-0.451 l-0.616-3.538c-0.105-0.596-0.395-1.063-0.884-1.406c-0.486-0.343-1.024-0.459-1.621-0.354l-4.441,0.774 c-0.566,0.099-1.025,0.39-1.383,0.879c-0.35,0.487-0.475,1.027-0.369,1.625l0.564,3.238c-0.713,0.303-1.395,0.648-2.037,1.038 c-0.654,0.392-1.263,0.812-1.828,1.264l-2.995-2.073c-0.476-0.352-0.999-0.484-1.59-0.383c-0.583,0.103-1.046,0.407-1.402,0.904 l-2.564,3.659c-0.354,0.504-0.479,1.044-0.377,1.623c0.102,0.585,0.402,1.057,0.905,1.404l2.703,1.907 c-0.292,0.687-0.527,1.402-0.721,2.144c-0.195,0.738-0.343,1.484-0.452,2.231l-3.538,0.616c-0.596,0.104-1.063,0.396-1.406,0.884 c-0.344,0.486-0.458,1.025-0.354,1.621l0.773,4.441c0.099,0.566,0.388,1.026,0.88,1.383c0.487,0.35,1.027,0.474,1.624,0.369 l3.239-0.564c0.304,0.713,0.648,1.394,1.038,2.039c0.392,0.652,0.815,1.274,1.272,1.869l-2.081,2.952 c-0.353,0.475-0.485,0.999-0.383,1.59c0.102,0.583,0.406,1.047,0.904,1.402l3.665,2.607c0.499,0.325,1.036,0.436,1.618,0.334 c0.583-0.101,1.059-0.389,1.41-0.862l1.899-2.746c0.688,0.293,1.403,0.528,2.144,0.721c0.738,0.194,1.484,0.343,2.23,0.45 l0.618,3.54c0.104,0.597,0.396,1.063,0.883,1.404c0.486,0.344,1.025,0.46,1.621,0.356l4.439-0.775 c0.569-0.1,1.028-0.389,1.386-0.879c0.349-0.488,0.474-1.025,0.368-1.624l-0.565-3.241c0.713-0.303,1.396-0.646,2.04-1.037 c0.651-0.393,1.274-0.814,1.87-1.27l2.951,2.081c0.475,0.352,1.008,0.483,1.604,0.378c0.604-0.104,1.061-0.409,1.388-0.901 l2.609-3.665c0.324-0.5,0.435-1.036,0.332-1.618c-0.101-0.583-0.387-1.059-0.86-1.41l-2.748-1.899 c0.294-0.688,0.528-1.403,0.722-2.144c0.194-0.738,0.342-1.484,0.452-2.232l3.537-0.616c0.597-0.104,1.063-0.394,1.405-0.883 c0.344-0.488,0.459-1.024,0.355-1.621l-0.775-4.441c-0.099-0.567-0.389-1.025-0.879-1.384c-0.487-0.351-1.027-0.473-1.624-0.369 l-3.239,0.565c-0.299-0.684-0.642-1.358-1.035-2.017c-0.395-0.667-0.816-1.283-1.267-1.85l2.074-2.995 c0.353-0.475,0.484-0.998,0.38-1.59c-0.101-0.583-0.405-1.045-0.904-1.401L111.918,53.649L111.918,53.649z M99.16,64.929 c1.071-0.188,2.118-0.162,3.147,0.075c1.025,0.246,1.953,0.657,2.777,1.231c0.825,0.582,1.523,1.316,2.101,2.198 c0.573,0.889,0.95,1.865,1.139,2.936c0.187,1.072,0.16,2.119-0.076,3.15c-0.246,1.023-0.655,1.949-1.233,2.776 c-0.582,0.823-1.314,1.522-2.196,2.1c-0.889,0.573-1.865,0.951-2.937,1.139c-1.07,0.186-2.117,0.159-3.148-0.077 c-1.025-0.246-1.95-0.655-2.777-1.232c-0.822-0.582-1.522-1.314-2.1-2.196c-0.572-0.889-0.952-1.866-1.138-2.937 c-0.188-1.07-0.162-2.117,0.075-3.148c0.246-1.025,0.657-1.951,1.231-2.778c0.583-0.821,1.316-1.521,2.198-2.099 C97.114,65.494,98.09,65.116,99.16,64.929L99.16,64.929z M40.262,24.224c2.201,0,4.28,0.417,6.252,1.248 c1.961,0.846,3.666,1.986,5.115,3.421c1.435,1.449,2.575,3.156,3.421,5.113c0.833,1.973,1.248,4.054,1.248,6.254 c0,2.201-0.415,4.282-1.248,6.254c-0.846,1.959-1.986,3.666-3.421,5.115c-1.449,1.436-3.154,2.575-5.115,3.421 c-1.972,0.833-4.051,1.248-6.252,1.248s-4.282-0.415-6.255-1.248c-1.958-0.846-3.664-1.985-5.112-3.421 c-1.437-1.449-2.577-3.155-3.423-5.115c-0.831-1.972-1.248-4.053-1.248-6.254c0-2.2,0.417-4.281,1.248-6.254 c0.846-1.958,1.986-3.664,3.423-5.113c1.448-1.435,3.154-2.576,5.112-3.421C35.979,24.641,38.061,24.224,40.262,24.224 L40.262,24.224z"/></g></svg>
                     </div>
-                    <h3 class="text-[22px] font-semibold mb-2 mt-4">Customization</h3>
-                    <p class="text-gray-800 font-medium leading-[27px]">We don't believe in one-size-fits-all solutions. Every client and project is unique, and we ensure a personalized approach.</p>
+                    <h3 class="md:text-[22px] sm:text-[20px] text-[18px] font-semibold md:mb-2 mb-1.5 md:mt-4 mt-3">Customization</h3>
+                    <p class="text-gray-800 font-medium md:leading-[27px] leading-[24px] max-md:text-[15px] max-sm:text-[14px]">We don't believe in one-size-fits-all solutions. Every client and project is unique, and we ensure a personalized approach.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 ease-in-out border-2 hover:border-green-500 hover:border-2 hover:translate-y-2" data-aos="fade-right">
+                <div class="bg-white md:p-6 sm:p-5 p-4 rounded-lg shadow-md transition-all duration-300 ease-in-out border-2 hover:border-green-500 hover:border-2 hover:translate-y-2" data-aos="fade-right">
                     <div>
-                        <svg class="fill-green-500 h-9" viewBox="0 0 77 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="fill-green-500 sm:h-9 h-6" viewBox="0 0 77 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_3_2)">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1314 40.5672V65.4931C12.1281 65.7951 12.0062 66.0838 11.792 66.2968C11.5778 66.5098 11.2885 66.6301 10.9864 66.6317H1.14494C0.842365 66.6317 0.552089 66.512 0.33755 66.2986C0.12301 66.0852 0.00165342 65.7956 0 65.4931L0 40.5672H12.1314ZM0 32.4274L26.0208 9.66004C31.7831 15.2909 37.3701 22.1292 43.0698 27.7601L63.8602 6.88215L57.1657 0.175182L76.88 0V19.8832L70.4546 13.4577C65.8435 18.1313 54.9384 28.4233 50.3274 33.0406C44.49 38.8716 41.7059 38.978 35.8748 33.1469L26.0208 22.1856L14.4713 32.4274H0ZM71.5557 24.2064V65.4993C71.5525 65.8003 71.4314 66.088 71.2186 66.3009C71.0058 66.5137 70.718 66.6347 70.417 66.638H60.5693C60.2683 66.6331 59.9812 66.5105 59.7696 66.2965C59.5579 66.0825 59.4384 65.7941 59.4369 65.4931V35.8435C61.3138 34.0229 63.5036 31.9082 65.7372 29.7559L70.3983 25.27C70.7694 24.8953 71.1599 24.5403 71.5682 24.2064H71.5557ZM51.7476 42.7569V65.4931C51.7443 65.7951 51.6224 66.0838 51.4083 66.2968C51.1941 66.5098 50.9047 66.6301 50.6027 66.6317H40.7612C40.4591 66.6301 40.1698 66.5098 39.9556 66.2968C39.7414 66.0838 39.6195 65.7951 39.6162 65.4931V45.1845C40.7894 45.4691 41.9943 45.6016 43.2012 45.5786C46.2715 45.534 49.2543 44.5492 51.7476 42.7569ZM31.9395 40.88V65.4618C31.9362 65.7638 31.8143 66.0525 31.6001 66.2655C31.386 66.4785 31.0966 66.5988 30.7945 66.6005H20.9468C20.6453 66.5988 20.3566 66.4783 20.1434 66.2651C19.9303 66.0519 19.8098 65.7633 19.8081 65.4618V38.7903C20.0083 38.6402 20.2023 38.4837 20.39 38.3211L25.3076 33.9415L29.2742 38.3211L29.5808 38.6401C30.3816 39.4452 31.1678 40.1792 31.9395 40.8424V40.88Z"/>
                             </g>
@@ -183,76 +183,100 @@
                             </defs>
                         </svg>
                     </div>
-                    <h3 class="text-[22px] font-semibold mb-2 mt-4">Proven Results</h3>
-                    <p class="text-gray-800 font-medium leading-[27px]">We have a track record of delivering results that matter – whether it’s launching a new product, rebranding, or driving business growth.</p>
+                    <h3 class="md:text-[22px] sm:text-[20px] text-[18px] font-semibold md:mb-2 mb-1.5 md:mt-4 mt-3">Proven Results</h3>
+                    <p class="text-gray-800 font-medium md:leading-[27px] leading-[24px] max-md:text-[15px] max-sm:text-[14px]">We have a track record of delivering results that matter – whether it’s launching a new product, rebranding, or driving business growth.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 ease-in-out border-2 hover:border-yellow-500 hover:border-2 hover:translate-y-2" data-aos="fade-left">
+                <div class="bg-white md:p-6 sm:p-5 p-4 rounded-lg shadow-md transition-all duration-300 ease-in-out border-2 hover:border-yellow-500 hover:border-2 hover:translate-y-2" data-aos="fade-left">
                     <div>
-                        <svg class="fill-blue-500 h-11" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 6.00067L21 6.00139M8 12.0007L21 12.0015M8 18.0007L21 18.0015M3.5 6H3.51M3.5 12H3.51M3.5 18H3.51M4 6C4 6.27614 3.77614 6.5 3.5 6.5C3.22386 6.5 3 6.27614 3 6C3 5.72386 3.22386 5.5 3.5 5.5C3.77614 5.5 4 5.72386 4 6ZM4 12C4 12.2761 3.77614 12.5 3.5 12.5C3.22386 12.5 3 12.2761 3 12C3 11.7239 3.22386 11.5 3.5 11.5C3.77614 11.5 4 11.7239 4 12ZM4 18C4 18.2761 3.77614 18.5 3.5 18.5C3.22386 18.5 3 18.2761 3 18C3 17.7239 3.22386 17.5 3.5 17.5C3.77614 17.5 4 17.7239 4 18Z" class="stroke-yellow-500 stroke-[2]" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        <svg class="fill-blue-500 sm:h-11 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 6.00067L21 6.00139M8 12.0007L21 12.0015M8 18.0007L21 18.0015M3.5 6H3.51M3.5 12H3.51M3.5 18H3.51M4 6C4 6.27614 3.77614 6.5 3.5 6.5C3.22386 6.5 3 6.27614 3 6C3 5.72386 3.22386 5.5 3.5 5.5C3.77614 5.5 4 5.72386 4 6ZM4 12C4 12.2761 3.77614 12.5 3.5 12.5C3.22386 12.5 3 12.2761 3 12C3 11.7239 3.22386 11.5 3.5 11.5C3.77614 11.5 4 11.7239 4 12ZM4 18C4 18.2761 3.77614 18.5 3.5 18.5C3.22386 18.5 3 18.2761 3 18C3 17.7239 3.22386 17.5 3.5 17.5C3.77614 17.5 4 17.7239 4 18Z" class="stroke-yellow-500 stroke-[2]" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                     </div>
-                    <h3 class="text-[22px] font-semibold mb-2 mt-4">End-to-End Service</h3>
-                    <p class="text-gray-800 font-medium leading-[27px]">From ideation to execution, we provide full-spectrum services that cover every aspect of your project.</p>
+                    <h3 class="md:text-[22px] sm:text-[20px] text-[18px] font-semibold md:mb-2 mb-1.5 md:mt-4 mt-3">End-to-End Service</h3>
+                    <p class="text-gray-800 font-medium md:leading-[27px] leading-[24px] max-md:text-[15px] max-sm:text-[14px]">From ideation to execution, we provide full-spectrum services that cover every aspect of your project.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md transition-all duration-300 ease-in-out border-2 hover:border-purple-500 hover:border-2 hover:translate-y-2" data-aos="fade-up">
+                <div class="bg-white md:p-6 sm:p-5 p-4 rounded-lg shadow-md transition-all duration-300 ease-in-out border-2 hover:border-purple-500 hover:border-2 hover:translate-y-2" data-aos="fade-up">
                     <div>
-                        <svg class="fill-purple-500 h-9" viewBox="0 0 100 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="fill-purple-500 sm:h-9 h-6" viewBox="0 0 100 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M71.9355 42.9032C63.871 42.9032 57.0968 36.4516 57.0968 28.0645C57.0968 19.6774 63.5484 13.2258 71.9355 13.2258C80.3226 13.2258 86.7742 19.6774 86.7742 28.0645C86.7742 36.4516 80 42.9032 71.9355 42.9032ZM71.9355 19.6774C67.4194 19.6774 63.5484 23.2258 63.5484 28.0645C63.5484 32.9032 67.0968 36.4516 71.9355 36.4516C76.7742 36.4516 80.3226 32.9032 80.3226 28.0645C80.3226 23.2258 76.4516 19.6774 71.9355 19.6774ZM93.871 76.129H80.3226C78.3871 76.129 77.0968 74.8387 77.0968 72.9032C77.0968 70.9678 78.3871 69.6774 80.3226 69.6774H93.5484C93.2258 62.5807 86.129 52.2581 75.8065 52.2581H74.5161C72.5806 52.2581 71.2903 50.9677 71.2903 49.0323C71.2903 47.0968 72.5806 45.8065 74.5161 45.8065H75.8065C90.6452 45.8065 100 60.3226 100 70C100 73.5484 97.0968 76.129 93.871 76.129Z"/>
                             <path d="M36.4516 36.7742C26.129 36.7742 17.7419 28.3871 17.7419 18.3871C17.7419 8.3871 26.129 0 36.129 0C46.129 0 54.5161 8.3871 54.5161 18.3871C54.5161 28.3871 46.4516 36.7742 36.4516 36.7742ZM36.4516 6.45161C29.6774 6.45161 24.1935 11.6129 24.1935 18.3871C24.1935 25.1613 29.6774 30.3226 36.129 30.3226C42.5806 30.3226 48.0645 24.8387 48.0645 18.3871C48.0645 11.9355 42.9032 6.45161 36.4516 6.45161ZM65.4839 76.129H7.09677C3.22581 76.129 0 72.9032 0 69.0323C0 56.4516 12.2581 38.0645 30.9677 38.0645H40.9677C60 38.0645 71.9355 56.4516 71.9355 69.0323C72.5806 72.9032 69.3548 76.129 65.4839 76.129ZM31.2903 44.5161C16.4516 44.5161 6.77419 59.3548 6.77419 69.0323C6.77419 69.3548 7.09677 69.6774 7.41935 69.6774H65.8064C66.129 69.6774 66.4516 69.3548 66.4516 69.0323C66.4516 59.3548 56.7742 44.5161 41.9355 44.5161H31.2903Z"/>
                         </svg>
                     </div>
-                    <h3 class="text-[22px] font-semibold mb-2 mt-4">Client-Centered</h3>
-                    <p class="text-gray-800 font-medium leading-[27px]">We work closely with you to make sure the work we do aligns perfectly with your brand’s vision.</p>
+                    <h3 class="md:text-[22px] sm:text-[20px] text-[18px] font-semibold md:mb-2 mb-1.5 md:mt-4 mt-3">Client-Centered</h3>
+                    <p class="text-gray-800 font-medium md:leading-[27px] leading-[24px] max-md:text-[15px] max-sm:text-[14px]">We work closely with you to make sure the work we do aligns perfectly with your brand’s vision.</p>
                 </div>
             </div>
         </div>
     </section>
     <!-- ***** content section end ***** -->
 
+    <!-- send mail section start -->
+    <section class="lg:mt-20 sm:mt-16 mt-10 lg:py-24 md:py-20 sm:py-16 py-10 bg-[url(assets/img/background-image-1.webp)] bg-center bg-cover bg-no-repeat relative before:content-[''] before:absolute before:top-0 before:left-0 before:size-full before:bg-black/70"> 
+        <div class="container mx-auto lg:px-12 md:px-7 px-4 relative">
+            <div class="flex md:flex-row flex-col items-center justify-between">
+                <div class="text-white max-md:text-center lg:text-[35px] md:text-[30px] sm:text-[28px] text-[24px] font-medium leading-none">
+                    <span class="lg:text-[70px] md:text-[50px] sm:text-[40px] text-[30px] mb-2.5 block font-semibold uppercase text-theme1">A multiverse</span>
+                    of careers with us. 
+                </div>
+                <div class="flex max-md:mt-7">
+                    <a href="mailto:arun@apbrandsloutions.in" class="bg-theme1 text-white font-medium sm:text-[15px] text-[14px] group pr-[6px] sm:pl-6 pl-4 rounded-full py-[6px] flex items-center sm:gap-4 gap-3 transition-all duration-300 ease-in-out relative hover:bg-theme2">
+                        arun@apbrandsloutions.in
+                        <span class="sm:size-[38px] size-[32px] bg-white rounded-full flex items-center justify-center transition-all duration-300 ease-in-out shadow-lg group-hover:translate-x-[20px] group-hover:bg-theme3 group-hover:fill-white">
+                            <svg class="h-3" viewBox="0 0 50 38" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 16.2551H43.2961V21.8417H0V16.2551Z"/>
+                                <path d="M31.2849 37.7635L27.3743 33.8529L42.1788 19.0484L27.3743 4.24393L31.2849 0.333313L50 19.0484L31.2849 37.7635Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- send mail section end -->
+
     <!-- ***** footer start ***** -->
-    <footer class="border-t py-8 mt-16 bg-theme3/15">
+    <footer class="border-t md:py-8 py-6 bg-theme3/15 relative before:content-[''] before:absolute before:">
         <div class="container mx-auto lg:px-12 md:px-7 px-4">
-            <div class="grid grid-cols-7 gap-4">
-                <div class="col-span-2">
-                    <div class="h-40">
+            <div class="grid lg:grid-cols-7 md:grid-cols-3 grid-cols-1 md:gap-4 gap-6">
+                <div class="lg:col-span-2 col-span-1">
+                    <div class="md:h-40 sm:h-32 h-24">
                         <img src="assets/img/logo.png" alt="logo" class="h-full">
                     </div>
                     <div class="text-sm font-medium text-gray-500 mt-1">©2025 Apbrandsolutions. Privacy Policy</div>
                 </div>
-                <div class="col-span-3">
-                    <div class="grid grid-cols-2">
+                <div class="lg:col-span-3 md:col-span-2 col-span-1">
+                    <div class="grid sm:grid-cols-2 max-sm:gap-6">
                         <div>
-                            <div class="font-semibold text-[20px]">
+                            <div class="font-semibold sm:text-[20px] text-[17px]">
                                 Usefull Links
                             </div>
-                            <ul class="mt-4 flex flex-col gap-3">
-                                <li><a href="about-us.html" class="font-medium text-[15px] text-gray-600 transition-all duration-300 ease-in-out hover:text-theme1">About Apbrandsolutions</a></li>
-                                <li><a href="" class="font-medium text-[15px] text-gray-600 transition-all duration-300 ease-in-out hover:text-theme1">Capabilities</a></li>
-                                <li><a href="" class="font-medium text-[15px] text-gray-600 transition-all duration-300 ease-in-out hover:text-theme1">Work</a></li>
-                                <li><a href="" class="font-medium text-[15px] text-gray-600 transition-all duration-300 ease-in-out hover:text-theme1">Carrier</a></li>
-                                <li><a href="" class="font-medium text-[15px] text-gray-600 transition-all duration-300 ease-in-out hover:text-theme1">Contact</a></li>
+                            <ul class="md:mt-4 mt-2 flex flex-col md:gap-3 sm:gap-2 gap-1">
+                                <li><a href="about-us.html" class="font-medium sm:text-[15px] text-[14px] text-gray-600 transition-all duration-300 ease-in-out hover:text-theme1">About Apbrandsolutions</a></li>
+                                <li><a href="" class="font-medium sm:text-[15px] text-[14px] text-gray-600 transition-all duration-300 ease-in-out hover:text-theme1">Capabilities</a></li>
+                                <li><a href="" class="font-medium sm:text-[15px] text-[14px] text-gray-600 transition-all duration-300 ease-in-out hover:text-theme1">Work</a></li>
+                                <li><a href="" class="font-medium sm:text-[15px] text-[14px] text-gray-600 transition-all duration-300 ease-in-out hover:text-theme1">Carrier</a></li>
+                                <li><a href="" class="font-medium sm:text-[15px] text-[14px] text-gray-600 transition-all duration-300 ease-in-out hover:text-theme1">Contact</a></li>
                             </ul>
                         </div>
                         <div>
-                            <div class="font-semibold text-[20px]">
+                            <div class="font-semibold sm:text-[20px] text-[17px]">
                                 Sitemap
                             </div>
-                            <ul class="mt-4 flex flex-col gap-3">
-                                <li><a href="" class="font-medium text-[15px] text-gray-600 transition-all duration-300 ease-in-out hover:text-theme1">Award</a></li>
-                                <li><a href="" class="font-medium text-[15px] text-gray-600 transition-all duration-300 ease-in-out hover:text-theme1">Blog</a></li>
-                                <li><a href="" class="font-medium text-[15px] text-gray-600 transition-all duration-300 ease-in-out hover:text-theme1">Insights</a></li>
+                            <ul class="md:mt-4 mt-2 flex flex-col md:gap-3 sm:gap-2 gap-1">
+                                <li><a href="" class="font-medium sm:text-[15px] text-[14px] text-gray-600 transition-all duration-300 ease-in-out hover:text-theme1">Award</a></li>
+                                <li><a href="" class="font-medium sm:text-[15px] text-[14px] text-gray-600 transition-all duration-300 ease-in-out hover:text-theme1">Blog</a></li>
+                                <li><a href="" class="font-medium sm:text-[15px] text-[14px] text-gray-600 transition-all duration-300 ease-in-out hover:text-theme1">Insights</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-span-2">
-                    <div class="font-semibold text-[20px]">
+                <div class="lg:col-span-2 md:col-span-3">
+                    <div class="font-semibold sm:text-[20px] text-[17px]">
                        Address
                     </div>
-                    <div class="mt-4 ">
-                        <div class="font-medium text-[15px] leading-[29px] text-gray-600 transition-all duration-300 ease-in-out">
+                    <div class="md:mt-4 mt-2">
+                        <div class="font-medium sm:text-[15px] text-[14px] sm:leading-[29px] leading-[24px] text-gray-600 transition-all duration-300 ease-in-out">
                             AP Brand Solutions Pvt. Ltd Head Office:-3RD Floor, TF04B, JMD Regent Plaza, Mehrauli Gurugram Road, Gurugram, Haryana-122002
                         </div>
-                        <a href="" class="font-semibold mt-3 text-[15px] flex items-center gap-2 hover:text-theme1 hover:fill-theme1 transition-all duration-300 ease-in-out">
+                        <a href="" class="font-semibold mt-3 sm:text-[15px] text-[14px] flex items-center gap-2 hover:text-theme1 hover:fill-theme1 transition-all duration-300 ease-in-out">
                             Get Direction
                             <svg id="Layer_1" data-name="Layer 1" class="h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.86 121.64"><title>direction-right</title><path d="M121.62,59,2.78.2A1.92,1.92,0,0,0,.2,1.08a1.89,1.89,0,0,0,0,1.76h0l30.87,58L.23,118.8h0a1.89,1.89,0,0,0,0,1.76,1.92,1.92,0,0,0,2.58.88l118.84-58.8a2,2,0,0,0,0-3.64Z"/></svg>
                         </a>
@@ -269,137 +293,10 @@
     <script src="assets/libs/aos/aos.js"></script>
     <script src="https://player.vimeo.com/api/player.js"></script>
 
-    <!-- hero slider js -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          var swiper = new Swiper(".heroslider", {
-            loop: true,
-            autoplay: {
-              delay: 3000,
-              disableOnInteraction: false,
-            },
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-            on: {
-              slideChangeTransitionStart: function () {
-                // Sabhi text ko hide karo
-                document.querySelectorAll(".text-content").forEach((el) => {
-                  el.classList.remove("animate-fadeInUp");
-                  el.classList.add("opacity-0");
-                });
-              },
-              slideChangeTransitionEnd: function () {
-                // Active slide ke text ko show karo
-                let activeSlide = document.querySelector(".swiper-slide-active");
-                let textElements = activeSlide.querySelectorAll(".text-content");
-      
-                textElements.forEach((el, index) => {
-                  setTimeout(() => {
-                    el.classList.remove("opacity-0");
-                    el.classList.add("animate-fadeInUp");
-                  }, index * 300);
-                });
-              },
-            },
-          });
-      
-          // ✅ **Fix: First Slide Ke Text Ko On Load Animate Karo**
-          setTimeout(() => {
-            let firstSlide = document.querySelector(".swiper-slide-active");
-            let firstTextElements = firstSlide.querySelectorAll(".text-content");
-      
-            firstTextElements.forEach((el, index) => {
-              setTimeout(() => {
-                el.classList.remove("opacity-0");
-                el.classList.add("animate-fadeInUp");
-              }, index * 300);
-            });
-          }, 500);
-        });
-    </script>
-
-    <!-- creativity slider -->
-    <script>
-        var swiper = new Swiper(".creativityslider", {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            loop:true,
-            navigation: {
-                nextEl: ".creativityslider-next",
-                prevEl: ".creativityslider-prev",
-            },
-            breakpoints: {
-                640: {
-                slidesPerView: 2,
-            },
-            768: {
-                slidesPerView: 4,
-            },
-            1024: {
-                slidesPerView: 3,
-            },
-          },
-        });
-    </script>
-      
-    <!-- compassion slider -->
-    <script>
-        var swiper = new Swiper(".compassionslider", {
-            slidesPerView: 1,
-            spaceBetween: 18,
-            loop:true,
-            navigation: {
-                nextEl: ".compassionslider-next",
-                prevEl: ".compassionslider-prev",
-            },
-            breakpoints: {
-                640: {
-                slidesPerView: 2,
-            },
-            768: {
-                slidesPerView: 4,
-            },
-            1024: {
-                slidesPerView: 5,
-            },
-          },
-        });
-    </script>
-
     <!-- aos js -->
     <script>
         AOS.init();
-    </script>
-
-    <!-- video play js -->
-    <script>
-        document.querySelectorAll(".video-card").forEach(card => {
-            const thumbnail = card.querySelector(".video-thumbnail");
-            const video = card.querySelector(".video");
-            const playButton = card.querySelector(".video-btn");
-    
-            function toggleVideo() {
-                if (video.paused) {
-                    // Play video
-                    thumbnail.classList.add("hidden"); // Hide thumbnail
-                    video.classList.remove("hidden"); // Show video
-                    video.play();
-                    playButton.classList.add("hidden"); // Hide play button
-                } else {
-                    // Pause video
-                    video.pause();
-                    playButton.classList.remove("hidden"); // Show play button
-                }
-            }
-    
-            // Play/Pause video on button click
-            playButton.addEventListener("click", toggleVideo);
-            video.addEventListener("click", toggleVideo);
-            thumbnail.addEventListener("click", toggleVideo); // Now thumbnail will also play the video
-        });
-    </script>
+    </script>   
     
 </body>
 </html>

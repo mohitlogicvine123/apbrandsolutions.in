@@ -1,3 +1,15 @@
+// navbar class add 
+window.addEventListener('scroll', function() {
+  var navbar = document.getElementById('navbar');
+  if (window.scrollY > 120) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+
+
+// offcanvas 
 function toggleMenu() {
     const menu = document.getElementById('offcanvas-menu');
     const body = document.body;
@@ -109,3 +121,4 @@ const accordionItems = document.querySelectorAll('.accordion-item');
 
   const slider = new SliderClip(document.querySelector('.slider'));
 } 
+
